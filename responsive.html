@@ -1,9 +1,9 @@
 <!--
 =========================================================
-Name        : index.html
+Name        : responsive.html
 Assignment  : Lab 4 Exercise B
-Author(s)   : Mahdi Ansari, William Arthur Philip Louis
-Submission  : May 21, 2030
+Author(s)   : Hooriya Khan, Junaid Khan
+Submission  : February 7, 2024
 Description : Responsive Layouts.
 =========================================================
 -->
@@ -17,8 +17,9 @@ Description : Responsive Layouts.
 	-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- First, link the menu.css file here -->
+	<link rel="stylesheet" href="menu.css">
 
+	<!---
 	<style>	
 		/* Remove borders at the end, they have been add just for detecting positions of items*/	
 		div {
@@ -37,6 +38,7 @@ Description : Responsive Layouts.
 			border: 1px solid yellow;	
 		}		
 	</style>
+	-->
 
     <style>
 		body { margin: 0; padding: 0;}
@@ -46,37 +48,92 @@ Description : Responsive Layouts.
         .main { padding: 15px; margin-left: 150px;}		
         .footer { position: fixed; bottom: 0; width: 100%;}
         .news-item { padding: 10px; }
-		
-		.row { 
-			/*I need some CSS codes.*/		
-		}
 
 		.large, .medium, .small {
-			/*I need some CSS codes.*/
+			width: 100%;
+			float: none;
 		}
 		
 		.gap {
-			/*I need some CSS codes.*/
+			padding: 35px;
 		}
 
-		@media screen and (min-width: 769px) {			
+		@media screen and (min-width: 769px) {	
+			.row {
+				display: grid;
+				grid-template-columns: 30% 70%;
+				box-sizing: border-box;
+			}
 			.large { 
-				/*I need some CSS codes.*/
+				grid-column: 1/3;
+				width: 100%;
+				box-sizing: border-box;
 			}
 			.medium { 
-				/*I need some CSS codes.*/
+				width: auto;
 			}
 			.small { 
-				/*I need some CSS codes.*/
+				width: auto;
 			 }
 		}
 
-        @media screen and (max-width: 768px) {
-            /*I need some CSS codes.*/
-        }
+		@media screen and (max-width: 768px) {
+    		.row {
+        		display: grid;
+        		grid-template-columns: 40% 60%;
+        		box-sizing: border-box;
+    		}
+    		.large {
+        		grid-column: 1/3;
+        		width: 100%;
+        		box-sizing: border-box;
+    		}
+    		.medium {
+        		width: 100%;
+        		box-sizing: border-box;
+    		}
+    		.small {
+        		width: 100%;
+        		box-sizing: border-box;
+    		}
+    		.menu {
+        		width: 100%;
+        		float: none;
+        		position: relative;
+        		box-sizing: border-box;
+    		}
+    		.main {
+        		padding: 15px;
+        		margin-left: 0;
+    		}
+		}
 
         @media screen and (max-width: 480px) {
-			/*I need some CSS codes.*/
+			.row {
+				display: block;
+			}
+            .large {
+				width:100%;
+				box-sizing: border-box;
+			}
+			.medium {
+				width:100%;
+				box-sizing: border-box;
+			}
+			.small {
+				width:100%;
+				box-sizing: border-box;
+			}
+			.menu {
+				width: 100%;
+				float: none;
+				position: relative;
+				box-sizing: border-box;
+			 }
+			 .main {
+				padding: 15px;
+				margin-left: 0;
+			 }
         }
 
         
