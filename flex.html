@@ -1,9 +1,9 @@
 <!--
 =========================================================
-Name        : index.html
+Name        : flex.html
 Assignment  : Lab 4 Exercise C
 Author(s)   : Hooriya Khan, Junaid Khan
-Submission  : May 21, 2030
+Submission  : February 7, 2024
 Description : Flex Layouts.
 =========================================================
 -->
@@ -19,7 +19,7 @@ Description : Flex Layouts.
 
 	<style>	
 		/* Remove borders at the end, they have been add just for detecting positions of items*/	
-		div {
+		/*div {
 			border: 1px dashed gray;	
 		}
 		.row{ 
@@ -33,7 +33,7 @@ Description : Flex Layouts.
 		}
 		.small {
 			border: 1px solid yellow;	
-		}		
+		}*/		
 	</style>
 
 	<style>
@@ -112,7 +112,13 @@ Description : Flex Layouts.
         @media screen and (max-width: 768px) {
 			.body { 
 				/*I need some CSS codes.*/
+				flex-direction: column;
 			}
+            .menu ul { 
+				/*I need some CSS codes.*/
+				flex-direction: row;
+			 }            
+            /*I need some CSS codes.*/
 			.large {
 				width: 100%;
 			}
@@ -124,12 +130,6 @@ Description : Flex Layouts.
 				/*I need some CSS codes.*/
 				width: 40%;
 			 } 
-            .menu ul { 
-				/*I need some CSS codes.*/
-				margin-top: 10px;
-				display: flex;
-			 }            
-            /*I need some CSS codes.*/
         }
 
         @media screen and (max-width: 480px) {
