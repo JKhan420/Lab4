@@ -2,7 +2,7 @@
 =========================================================
 Name        : index.html
 Assignment  : Lab 4 Exercise C
-Author(s)   : Mahdi Ansari, William Arthur Philip Louis
+Author(s)   : Hooriya Khan, Junaid Khan
 Submission  : May 21, 2030
 Description : Flex Layouts.
 =========================================================
@@ -69,19 +69,27 @@ Description : Flex Layouts.
         img { max-width: 100%; height: auto; }
         .container { 
 			/*I need some CSS codes.*/
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
 		 }
         .header, .footer { background-color: #f2f2f2; text-align: center; padding: 10px; width: 100%;}
 		.body { 
 			/*I need some CSS codes.*/
+			display: flex;
+			flex-wrap: wrap;
 		}
         .main { 
 			padding: 15px; 
 			/*I need some CSS codes.*/
+			flex: 1;
 		}
         
         .news-item { padding: 10px; }
         .row { 
 			/*I need some CSS codes.*/
+			display: flex;
+			flex-wrap: wrap;
 		}
         
 
@@ -89,12 +97,15 @@ Description : Flex Layouts.
             .menu { width: 150px; }     
 			.large { 
 				/*I need some CSS codes.*/
+				width: 100%;
 			}
 			.medium { 
 				/*I need some CSS codes.*/
+				width: 70%;
 			}
 			.small { 
 				/*I need some CSS codes.*/
+				width: 30%;
 			 }       
         }
 
@@ -102,8 +113,21 @@ Description : Flex Layouts.
 			.body { 
 				/*I need some CSS codes.*/
 			}
+			.large {
+				width: 100%;
+			}
+			.medium { 
+				/*I need some CSS codes.*/
+				width: 60%;
+			}
+			.small { 
+				/*I need some CSS codes.*/
+				width: 40%;
+			 } 
             .menu ul { 
 				/*I need some CSS codes.*/
+				margin-top: 10px;
+				display: flex;
 			 }            
             /*I need some CSS codes.*/
         }
@@ -112,6 +136,7 @@ Description : Flex Layouts.
             .news-item header h1 { font-size: 18px; }
             .medium, .small { 
 				/*I need some CSS codes.*/
+				width: 100%;
 			 }
         }
     </style>
